@@ -2,3 +2,13 @@ img {
     max-width: 100%;
     display: block;
 }
+
+ul {
+    list-style: none;
+}
+
+footer .player .time .time-bar,
+footer .settings .volume .volume-bar {
+    border-radius: .125rem;
+    height: .25rem;
+}

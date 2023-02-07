@@ -16,6 +16,7 @@ RESET
 body {
     width: 100vw;
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -29,6 +30,11 @@ DEBUG
 
 .debug .nav-bar nav.bottom {
     background-color: aqua;
+}
+
+footer .player .time-bar,
+footer .settings .volume .volume-bar {
+    background-color: yellow;
 }
 
 /*
@@ -50,6 +56,7 @@ nav-bar
     background-color: black;
     width: 3.125rem;
     height: calc(100% - 5.625rem);
+    padding: 0 1.25rem;
 }
 
 .nav-bar nav.top .logo-big,
@@ -76,7 +83,7 @@ nav-bar
     overflow-y: scroll;
 }
 
-/*------ nav-bar top -------*/
+/*------ nav-bar bottom -------*/
 
 
 /*
@@ -98,6 +105,11 @@ nav-bar mediaq
     .nav-bar span,
     .nav-bar nav.top .playlists  {
         display: inline-block;
+    }
+
+    .nav-bar nav.top .nav-menu,
+    .nav-bar {
+        align-items: flex-start;
     }
 }
 
@@ -140,4 +152,107 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
+    padding: 0 .625rem .25rem;
+}
+
+footer .playing,
+footer .settings {
+    width: 30%;
+}
+
+/*------ footer playing -------*/
+footer .playing .cover {
+    width: 1.75rem;
+    margin-right: .625rem;
+}
+
+footer .playing .track .title > div:first-child {
+    margin-right: .1875rem;
+}
+
+footer .playing .add {
+    margin-left: 1.5625rem;
+}
+
+footer .playing .add > div:first-child {
+    margin-right: .875rem;
+}
+
+/*------ footer player -------*/
+footer .player .controls {
+    margin-bottom: .875rem;
+}
+
+footer .player .controls .play {
+    margin: 0 .625rem;
+}
+
+footer .player .controls ul {
+    gap: 1.375rem;
+}
+
+footer .player .time .time-bar {
+    min-width: 8.125rem;
+    margin: 0 .5625rem;
+}
+
+/*------ footer settings -------*/
+footer .settings {
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+footer .settings .volume .volume-bar {
+    min-width: 5.3125rem;
+    margin-left: .375rem;
+}
+
+/*
+***************
+footer mediaq
+***************
+*/
+@media screen and (min-width: 552px) {
+    footer .playing .track .title {
+        display: flex;
+    }
+
+    footer .playing .cover {
+        width: 2.3125rem;
+    }
+
+    footer .settings {
+        justify-content: flex-end;
+        gap: .875rem;
+    }
+
+    footer .player .time .time-bar {
+        transform: scaleX(1.2);
+    }
+}
+
+@media screen and (min-width: 640px) {
+    footer .playing .add {
+        display: flex;
+    }
+
+    footer .playing .cover {
+        width: 2.625rem;
+        margin-right: .75rem;
+    }
+
+    footer .settings {
+        justify-content: flex-end;
+        gap: 1.0625rem;
+    }
+
+    footer .player .time .time-bar {
+        transform: scaleX(1.9);
+    }
+}
+
+@media screen and (min-width: 878px) {
+    footer .player .time .time-bar {
+        transform: scaleX(2.9);
+    }
 }
