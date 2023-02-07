@@ -4,7 +4,7 @@
 
 /*
 ***************
-reset
+RESET
 ***************
 */
 * {
@@ -15,7 +15,7 @@ reset
 
 /*
 ***************
-main
+MAIN
 ***************
 */
 main {
@@ -25,7 +25,7 @@ main {
 
 /*
 ***************
-side-bar
+side bar
 ***************
 */
 .side-bar {
@@ -34,9 +34,17 @@ side-bar
     height: calc(100% - 5.625rem);
 }
 
+.side-bar nav .logo-small {
+    padding: .3125rem .6875rem;
+}
+
+.side-bar nav .logo-big {
+    display: none;
+}
+
 /*
 ***************
-main-view
+main view
 ***************
 */
 .main-view {
@@ -57,7 +65,27 @@ main-view
 
 /*
 ***************
-footer
+main mediaq
+***************
+*/
+
+@media screen and (min-width: 552px) {
+    .side-bar {
+        width: 14.375rem;
+    }
+    
+    .side-bar nav .logo-small {
+        display: none;
+    }
+
+    .side-bar nav .logo-big {
+        display: block;
+    }
+}
+
+/*
+***************
+FOOTER
 ***************
 */
 footer {
