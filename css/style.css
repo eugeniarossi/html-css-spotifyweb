@@ -15,6 +15,15 @@ RESET
 
 /*
 ***************
+DEBUG
+***************
+*/
+.debug {
+    color: white;
+}
+
+/*
+***************
 MAIN
 ***************
 */
@@ -25,21 +34,52 @@ main {
 
 /*
 ***************
-side bar
+nav-bar
 ***************
 */
-.side-bar {
+.nav-bar {
     background-color: black;
     width: 3.125rem;
     height: calc(100% - 5.625rem);
 }
 
-.side-bar nav .logo-small {
+.nav-bar .logo-small {
     padding: .3125rem .6875rem;
 }
 
-.side-bar nav .logo-big {
+.nav-bar .logo-big {
     display: none;
+}
+
+.nav-bar nav.top span,
+.nav-bar nav.top .playlist {
+    display: none;
+}
+
+/*
+***************
+nav-bar mediaq
+***************
+*/
+
+@media screen and (min-width: 552px) {
+    .nav-bar {
+        width: 14.375rem;
+    }
+    
+    .nav-bar nav.top .logo-small {
+        display: none;
+    }
+
+    .nav-bar nav.top .logo-big {
+        display: block;
+    }
+
+    .nav-bar nav.top span,
+    .nav-bar nav.top .playlist {
+        display: inline-block;
+    }
+
 }
 
 /*
@@ -65,23 +105,9 @@ main view
 
 /*
 ***************
-main mediaq
+main-view mediaq
 ***************
 */
-
-@media screen and (min-width: 552px) {
-    .side-bar {
-        width: 14.375rem;
-    }
-    
-    .side-bar nav .logo-small {
-        display: none;
-    }
-
-    .side-bar nav .logo-big {
-        display: block;
-    }
-}
 
 /*
 ***************
