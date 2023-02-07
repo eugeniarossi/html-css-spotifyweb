@@ -1,0 +1,70 @@
+@import url('variables.css');
+@import url('utility.css');
+@import url('common.css');
+
+/*
+***************
+reset
+***************
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+***************
+main
+***************
+*/
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*
+***************
+side-bar
+***************
+*/
+.side-bar {
+    background-color: black;
+    width: 3.125rem;
+    height: calc(100% - 5.625rem);
+}
+
+/*
+***************
+main-view
+***************
+*/
+.main-view {
+    background-color: #141922;
+    width: calc(100% - 3.125rem);
+    height: calc(100% - 5.625rem);
+    position: relative;
+}
+
+.main-view .top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 5.625rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*
+***************
+footer
+***************
+*/
+footer {
+    background-color: #282828;
+    height: 5.625rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
