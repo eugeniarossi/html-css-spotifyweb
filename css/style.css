@@ -161,6 +161,21 @@ main view
     right: 0;
 }
 
+.top-bar .upgrade-btn {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    height: 2.5rem;
+    width: 13.4375rem;
+    border: .125rem solid white;
+    border-radius: 1.25rem;
+    background: #080b12;
+}
+
+.top-bar .upgrade-btn a {
+    color: white;
+}
+
 main .main-view .main-view-menu > ul > li > a {
     padding: .5rem .75rem;
 }
@@ -227,7 +242,6 @@ footer .settings {
 
 footer .player {
     min-width: 11.875rem;
-    width: 30%;
     flex-grow: 1;
     margin: 0 2%;
 }
