@@ -38,6 +38,10 @@ DEBUG
     background-color: pink;
 }
 
+.debug footer {
+    font-size: 14px;
+}
+
 .debug footer .player {
     background-color: violet;
 }
@@ -75,13 +79,14 @@ nav-bar
 }
 
 .nav-bar nav {
-    height: calc(100% - 5.625rem);
+    height: calc(100% - 2.5rem);
 }
 
 /*------ logo -------*/
 
 .nav-bar .logo-small {
     padding: .3125rem .6875rem;
+    height: 2.5rem;
 }
 
 .nav-bar .logo .logo-big {
@@ -121,6 +126,10 @@ nav-bar mediaq
     .nav-bar {
         width: 14.375rem;
         padding: 0 1.25rem;
+    }
+
+    .nav-bar nav {
+        height: calc(100% - 5.625rem);
     }
     
     .nav-bar .logo-small {
@@ -243,11 +252,12 @@ footer .settings {
 footer .player {
     min-width: 11.875rem;
     flex-grow: 1;
-    margin: 0 2%;
+    margin: 0 6%;
 }
 
 footer .playing {
     min-width: 8.125rem;
+    gap: 1.5rem;
 }
 
 /*------ footer playing -------*/
@@ -257,6 +267,7 @@ footer .playing .track {
 }
 
 footer .playing .track .cover {
+    min-width: 1.75rem;
     max-width: 2.625rem;
 }
 
@@ -296,6 +307,10 @@ footer mediaq
 ***************
 */
 @media screen and (min-width: 552px) {
+    footer .playing {
+        gap: 1.8125rem;
+    }
+
     footer .playing .track .subtitle {
         display: flex;
     }
@@ -307,8 +322,13 @@ footer mediaq
 }
 
 @media screen and (min-width: 640px) {
+    footer .playing {
+        gap: 2.625rem;
+    }
+
     footer .playing .add {
         display: flex;
+        gap: .375rem;
     }
 
     footer .settings {
