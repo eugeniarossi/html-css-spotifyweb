@@ -178,9 +178,14 @@ footer {
 }
 
 footer .playing,
-footer .settings,
+footer .settings {
+    width: 30%;
+}
+
 footer .player {
     width: 30%;
+    flex-grow: 1;
+    padding: 0 2%;
 }
 
 /*------ footer playing -------*/
@@ -219,10 +224,6 @@ footer .player .time {
     width: 100%;
 }
 
-footer .player .time .time-bar {
-    width: 80%;
-}
-
 /*------ footer settings -------*/
 
 footer .settings {
@@ -232,10 +233,7 @@ footer .settings {
 
 footer .settings .volume {
     width: 70%;
-}
-
-footer .settings .volume .volume-bar {
-    width: 90%;
+    max-width: 9.375rem;
 }
 
 /*
@@ -259,11 +257,6 @@ footer mediaq
 }
 
 @media screen and (min-width: 640px) {
-    footer .playing,
-    footer .settings {
-        width: 25%;
-    }
-
     footer .player {
         width: 40%;
     }
@@ -284,8 +277,5 @@ footer mediaq
 }
 
 @media screen and (min-width: 878px) {
-    footer .playing,
-    footer .settings {
-        width: 15%;
-    }
+
 }

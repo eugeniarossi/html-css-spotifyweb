@@ -11,4 +11,6 @@ footer .player .time .time-bar,
 footer .settings .volume .volume-bar {
     border-radius: .125rem;
     height: .25rem;
+    flex-grow: 1;
+    margin: .625rem;
 }
