@@ -183,27 +183,24 @@ footer .settings {
 }
 
 footer .player {
+    min-width: 11.875rem;
     width: 30%;
     flex-grow: 1;
-    padding: 0 2%;
+    margin: 0 2%;
+}
+
+footer .playing {
+    min-width: 8.125rem;
+    padding-right: .3125rem;
 }
 
 /*------ footer playing -------*/
-footer .playing .cover {
-    width: 1.75rem;
-    margin-right: .625rem;
+footer .playing .track {
+    gap: 5%;
 }
 
-footer .playing .track .title > div:first-child {
-    margin-right: .1875rem;
-}
-
-footer .playing .add {
-    margin-left: 1.5625rem;
-}
-
-footer .playing .add > div:first-child {
-    margin-right: .875rem;
+footer .playing .track .cover {
+    max-width: 2.625rem;
 }
 
 /*------ footer player -------*/
@@ -246,10 +243,6 @@ footer mediaq
         display: flex;
     }
 
-    footer .playing .cover {
-        width: 2.3125rem;
-    }
-
     footer .settings {
         justify-content: flex-end;
         gap: .875rem;
@@ -257,25 +250,12 @@ footer mediaq
 }
 
 @media screen and (min-width: 640px) {
-    footer .player {
-        width: 40%;
-    }
-
     footer .playing .add {
         display: flex;
-    }
-
-    footer .playing .cover {
-        width: 2.625rem;
-        margin-right: .75rem;
     }
 
     footer .settings {
         justify-content: flex-end;
         gap: 1.0625rem;
     }
-}
-
-@media screen and (min-width: 878px) {
-
 }
