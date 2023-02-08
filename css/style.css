@@ -34,6 +34,10 @@ footer .settings .volume .volume-bar {
     background-color: grey;
 }
 
+.playlists-list {
+    background-color: pink;
+}
+
 /*
 ***************
 MAIN
@@ -53,34 +57,47 @@ nav-bar
     background-color: black;
     width: 3.125rem;
     height: 100%;
+    overflow: hidden;
 }
 
-.nav-bar nav.top .logo-big,
-.nav-bar span,
-.nav-bar nav.top .playlists {
+.nav-bar .logo-big,
+.nav-bar nav span,
+.nav-bar nav .playlists {
     display: none;
 }
 
-/*------ nav-bar top -------*/
-.nav-bar nav.top .logo-small {
+/*------ logo -------*/
+
+.nav-bar .logo-small {
     padding: .3125rem .6875rem;
 }
 
-.nav-bar nav.top .logo-big {
+.nav-bar .logo .logo-big {
     padding: 1.25rem 1.3125rem 1.5rem;
 }
 
-.nav-bar nav.top .logo-big img {
+.nav-bar .logo-big img {
     height: 2.5rem;
 }
 
-.nav-bar nav.top .playlists-list {
-    max-height: 15.625rem;
-    overflow-y: scroll;
+/*------ playlist -------*/
+
+.nav-bar nav .playlists {
+    overflow: hidden;
 }
 
-/*------ nav-bar bottom -------*/
+.nav-bar nav .playlists .playlists-list {
+    height: 12.5rem;
+    width: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+}
 
+/*------ nav user -------*/
+
+.nav-bar nav .user {
+    margin-top: auto;
+}
 
 /*
 ***************
@@ -91,25 +108,21 @@ nav-bar mediaq
 @media screen and (min-width: 552px) {
     .nav-bar {
         width: 14.375rem;
+        padding: 0 1.25rem;
     }
     
-    .nav-bar nav.top .logo-small {
+    .nav-bar .logo-small {
         display: none;
     }
 
-    .nav-bar nav.top .logo-big,
-    .nav-bar span,
-    .nav-bar nav.top .playlists  {
+    .nav-bar .logo-big,
+    .nav-bar nav span,
+    .nav-bar nav .playlists  {
         display: inline-block;
     }
 
-    .nav-bar nav.top .nav-menu,
-    .nav-bar {
+    .nav-bar nav {
         align-items: flex-start;
-    }
-
-    .nav-bar {
-        padding: 0 1.25rem;
     }
 }
 
@@ -148,10 +161,6 @@ FOOTER
 footer {
     background-color: #282828;
     height: 5.625rem;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
     padding: 0 .625rem .25rem;
 }
 
@@ -179,6 +188,10 @@ footer .playing .add > div:first-child {
 }
 
 /*------ footer player -------*/
+footer .player {
+    width: 30%;
+}
+
 footer .player .controls {
     margin-bottom: .875rem;
 }
@@ -192,7 +205,7 @@ footer .player .controls ul {
 }
 
 footer .player .time .time-bar {
-    min-width: 8.125rem;
+    width: ;
     margin: 0 .5625rem;
 }
 
@@ -203,7 +216,6 @@ footer .settings {
 }
 
 footer .settings .volume .volume-bar {
-    min-width: 5.3125rem;
     margin-left: .375rem;
 }
 
