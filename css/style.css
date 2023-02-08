@@ -29,13 +29,21 @@ DEBUG
 }
 
 
-footer .player .time-bar,
-footer .settings .volume .volume-bar {
+.debug footer .player .time-bar,
+.debug footer .settings .volume .volume-bar {
     background-color: grey;
 }
 
-.playlists-list {
+.debug .playlists-list {
     background-color: pink;
+}
+
+.debug footer .player {
+    background-color: violet;
+}
+
+.debug footer .volume {
+    background-color: blue;
 }
 
 /*
@@ -157,6 +165,7 @@ main-view mediaq
 ***************
 */
 
+
 /*
 ***************
 FOOTER
@@ -169,7 +178,8 @@ footer {
 }
 
 footer .playing,
-footer .settings {
+footer .settings,
+footer .player {
     width: 30%;
 }
 
@@ -192,9 +202,6 @@ footer .playing .add > div:first-child {
 }
 
 /*------ footer player -------*/
-footer .player {
-    width: 30%;
-}
 
 footer .player .controls {
     margin-bottom: .875rem;
@@ -208,19 +215,27 @@ footer .player .controls ul {
     gap: 1.375rem;
 }
 
+footer .player .time {
+    width: 100%;
+}
+
 footer .player .time .time-bar {
-    width: ;
-    margin: 0 .5625rem;
+    width: 80%;
 }
 
 /*------ footer settings -------*/
+
 footer .settings {
     justify-content: flex-end;
     gap: .5rem;
 }
 
+footer .settings .volume {
+    width: 70%;
+}
+
 footer .settings .volume .volume-bar {
-    margin-left: .375rem;
+    width: 90%;
 }
 
 /*
@@ -241,13 +256,18 @@ footer mediaq
         justify-content: flex-end;
         gap: .875rem;
     }
-
-    footer .player .time .time-bar {
-        transform: scaleX(1.2);
-    }
 }
 
 @media screen and (min-width: 640px) {
+    footer .playing,
+    footer .settings {
+        width: 25%;
+    }
+
+    footer .player {
+        width: 40%;
+    }
+
     footer .playing .add {
         display: flex;
     }
@@ -261,14 +281,11 @@ footer mediaq
         justify-content: flex-end;
         gap: 1.0625rem;
     }
-
-    footer .player .time .time-bar {
-        transform: scaleX(1.9);
-    }
 }
 
 @media screen and (min-width: 878px) {
-    footer .player .time .time-bar {
-        transform: scaleX(2.9);
+    footer .playing,
+    footer .settings {
+        width: 15%;
     }
 }
