@@ -28,13 +28,10 @@ DEBUG
     color: white;
 }
 
-.debug .nav-bar nav.bottom {
-    background-color: aqua;
-}
 
 footer .player .time-bar,
 footer .settings .volume .volume-bar {
-    background-color: yellow;
+    background-color: grey;
 }
 
 /*
@@ -44,7 +41,7 @@ MAIN
 */
 main {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 5.625rem);
 }
 
 /*
@@ -55,8 +52,7 @@ nav-bar
 .nav-bar {
     background-color: black;
     width: 3.125rem;
-    height: calc(100% - 5.625rem);
-    padding: 0 1.25rem;
+    height: 100%;
 }
 
 .nav-bar nav.top .logo-big,
@@ -111,6 +107,10 @@ nav-bar mediaq
     .nav-bar {
         align-items: flex-start;
     }
+
+    .nav-bar {
+        padding: 0 1.25rem;
+    }
 }
 
 /*
@@ -121,7 +121,7 @@ main view
 .main-view {
     background-color: #141922;
     width: calc(100% - 3.125rem);
-    height: calc(100% - 5.625rem);
+    height: 100%;
     position: relative;
 }
 
