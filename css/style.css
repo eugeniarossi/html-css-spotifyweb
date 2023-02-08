@@ -66,6 +66,10 @@ nav-bar
     display: none;
 }
 
+.nav-bar nav {
+    height: calc(100% - 5.625rem);
+}
+
 /*------ logo -------*/
 
 .nav-bar .logo-small {
