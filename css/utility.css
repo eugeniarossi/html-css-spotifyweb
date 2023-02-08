@@ -19,6 +19,10 @@
     align-items: center;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .uppercase {
     text-transform: uppercase;
 }

@@ -148,7 +148,8 @@ main view
     width: calc(100% - 3.125rem);
     height: 100%;
     position: relative;
-    padding: 6.875rem 1.875rem 6.875rem 1.25rem;
+    padding: 6.875rem 1.875rem 1.25rem 1.25rem;
+    overflow-y: scroll;
 }
 
 .main-view .top-bar {
@@ -160,18 +161,34 @@ main view
     right: 0;
 }
 
-main .main-view .main-view-menu > ul {
-    flex-wrap: wrap;
-}
-
 main .main-view .main-view-menu > ul > li > a {
     padding: .5rem .75rem;
 }
 
-/*------ main-view container -------*/
+/*------ main container -------*/
 
-.main-view .container > * {
+.main-view .main-container > section {
     margin: 2.5rem 0;
+}
+
+.main-container .tracks-container {
+    margin: 0 -0.3125rem;
+    justify-content: flex-start;
+}
+
+.main-container .tracks-container .track {
+    width: calc(100% / 2 - .625rem);
+    margin-left: .3125rem;
+    margin-right: .3125rem;
+}
+
+.main-container .tracks-container .track .cover,
+.main-container .tracks-container .track .cover > img {
+    width: 100%;
+}
+
+.main-container .tracks-container .track-caption {
+    text-align: center;
 }
 
 /*
@@ -179,6 +196,18 @@ main .main-view .main-view-menu > ul > li > a {
 main-view mediaq
 ***************
 */
+
+@media screen and (min-width: 640px) {
+    .main-container .tracks-container .track {
+        width: calc(100% / 4 - .625rem);
+    }
+}
+
+@media screen and (min-width: 878px) {
+    .main-container .tracks-container .track {
+        width: calc(100% / 6 - .625rem);
+    }
+}
 
 /*
 ***************
@@ -253,7 +282,7 @@ footer mediaq
 ***************
 */
 @media screen and (min-width: 552px) {
-    footer .playing .track .title {
+    footer .playing .track .subtitle {
         display: flex;
     }
 
