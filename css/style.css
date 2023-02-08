@@ -148,6 +148,7 @@ main view
     width: calc(100% - 3.125rem);
     height: 100%;
     position: relative;
+    padding: 6.875rem 1.875rem 6.875rem 1.25rem;
 }
 
 .main-view .top-bar {
@@ -159,12 +160,25 @@ main view
     right: 0;
 }
 
+main .main-view .main-view-menu > ul {
+    flex-wrap: wrap;
+}
+
+main .main-view .main-view-menu > ul > li > a {
+    padding: .5rem .75rem;
+}
+
+/*------ main-view container -------*/
+
+.main-view .container > * {
+    margin: 2.5rem 0;
+}
+
 /*
 ***************
 main-view mediaq
 ***************
 */
-
 
 /*
 ***************
@@ -191,10 +205,10 @@ footer .player {
 
 footer .playing {
     min-width: 8.125rem;
-    padding-right: .3125rem;
 }
 
 /*------ footer playing -------*/
+
 footer .playing .track {
     gap: 5%;
 }
