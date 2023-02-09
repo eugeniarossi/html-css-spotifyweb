@@ -1,6 +1,9 @@
 @import url('variables.css');
 @import url('utility.css');
 @import url('common.css');
+@import url('main-nav.css');
+@import url('main-view.css');
+@import url('footer.css');
 
 /*
 ***************
@@ -28,14 +31,9 @@ DEBUG
     color: white;
 }
 
-
 .debug footer .player .time-bar,
 .debug footer .settings .volume .volume-bar {
     background-color: grey;
-}
-
-.debug .playlists-list {
-    background-color: pink;
 }
 
 .debug footer {
@@ -50,289 +48,11 @@ DEBUG
     background-color: blue;
 }
 
-/*
-***************
-MAIN
-***************
-*/
-main {
-    width: 100%;
-    height: calc(100% - 5.625rem);
-}
-
-/*
-***************
-nav-bar
-***************
-*/
-.nav-bar {
-    background-color: black;
-    width: 3.125rem;
-    height: 100%;
-    overflow: hidden;
-}
-
-.nav-bar .logo-big,
-.nav-bar nav span,
-.nav-bar nav .playlists {
-    display: none;
-}
-
-.nav-bar nav {
-    height: calc(100% - 2.5rem);
-}
-
-/*------ logo -------*/
-
-.nav-bar .logo-small {
-    padding: .3125rem .6875rem;
-    height: 2.5rem;
-}
-
-.nav-bar .logo .logo-big {
-    padding: 1.25rem 1.3125rem 1.5rem;
-}
-
-.nav-bar .logo-big img {
-    height: 2.5rem;
-}
-
-/*------ playlist -------*/
-
-.nav-bar nav .playlists {
-    overflow: hidden;
-}
-
-.nav-bar nav .playlists .playlists-list {
-    height: 12.5rem;
-    width: 100%;
-    overflow-y: auto;
-    flex-grow: 1;
-}
-
-/*------ nav user -------*/
-
-.nav-bar nav .user {
-    margin-top: auto;
-}
-
-/*
-***************
-nav-bar mediaq
-***************
-*/
-
-@media screen and (min-width: 552px) {
-    .nav-bar {
-        width: 14.375rem;
-        padding: 0 1.25rem;
-    }
-
-    .nav-bar nav {
-        height: calc(100% - 5.625rem);
-    }
-    
-    .nav-bar .logo-small {
-        display: none;
-    }
-
-    .nav-bar .logo-big,
-    .nav-bar nav span,
-    .nav-bar nav .playlists  {
-        display: inline-block;
-    }
-
-    .nav-bar nav {
-        align-items: flex-start;
-    }
-}
-
-/*
-***************
-main view
-***************
-*/
-.main-view {
-    background-color: #141922;
-    width: calc(100% - 3.125rem);
-    height: 100%;
-    position: relative;
-    padding: 6.875rem 1.875rem 1.25rem 1.25rem;
-    overflow-y: scroll;
-}
-
-.main-view .top-bar {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 5.625rem;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.top-bar .upgrade-btn {
-    position: absolute;
-    right: 1.25rem;
-    top: 1.25rem;
-    height: 2.5rem;
-    width: 13.4375rem;
-    border: .125rem solid white;
-    border-radius: 1.25rem;
-    background: #080b12;
-}
-
-.top-bar .upgrade-btn a {
+.debug .nav-bar nav a {
     color: white;
 }
 
-main .main-view .main-view-menu > ul > li > a {
-    padding: .5rem .75rem;
-}
-
-/*------ main container -------*/
-
-.main-view .main-container > section {
-    margin: 2.5rem 0;
-}
-
-.main-container .tracks-container {
-    margin: 0 -0.3125rem;
-    justify-content: flex-start;
-}
-
-.main-container .tracks-container .track {
-    width: calc(100% / 2 - .625rem);
-    margin-left: .3125rem;
-    margin-right: .3125rem;
-}
-
-.main-container .tracks-container .track .cover,
-.main-container .tracks-container .track .cover > img {
-    width: 100%;
-}
-
-.main-container .tracks-container .track-caption {
-    text-align: center;
-}
-
-/*
-***************
-main-view mediaq
-***************
-*/
-
-@media screen and (min-width: 640px) {
-    .main-container .tracks-container .track {
-        width: calc(100% / 4 - .625rem);
-    }
-}
-
-@media screen and (min-width: 878px) {
-    .main-container .tracks-container .track {
-        width: calc(100% / 6 - .625rem);
-    }
-}
-
-/*
-***************
-FOOTER
-***************
-*/
-footer {
-    background-color: #282828;
-    height: 5.625rem;
-    padding: 0 .625rem .25rem;
-}
-
-footer .playing,
-footer .settings {
-    width: 30%;
-}
-
-footer .player {
-    min-width: 11.875rem;
-    flex-grow: 1;
-    margin: 0 6%;
-}
-
-footer .playing {
-    min-width: 8.125rem;
-    gap: 1.5rem;
-}
-
-/*------ footer playing -------*/
-
-footer .playing .track {
-    gap: 5%;
-}
-
-footer .playing .track .cover {
-    min-width: 1.75rem;
-    max-width: 2.625rem;
-}
-
-/*------ footer player -------*/
-
-footer .player .controls {
-    margin-bottom: .875rem;
-}
-
-footer .player .controls .play {
-    margin: 0 .625rem;
-}
-
-footer .player .controls ul {
-    gap: 1.375rem;
-}
-
-footer .player .time {
-    width: 100%;
-}
-
-/*------ footer settings -------*/
-
-footer .settings {
-    justify-content: flex-end;
-    gap: .5rem;
-}
-
-footer .settings .volume {
-    width: 70%;
-    max-width: 9.375rem;
-}
-
-/*
-***************
-footer mediaq
-***************
-*/
-@media screen and (min-width: 552px) {
-    footer .playing {
-        gap: 1.8125rem;
-    }
-
-    footer .playing .track .subtitle {
-        display: flex;
-    }
-
-    footer .settings {
-        justify-content: flex-end;
-        gap: .875rem;
-    }
-}
-
-@media screen and (min-width: 640px) {
-    footer .playing {
-        gap: 2.625rem;
-    }
-
-    footer .playing .add {
-        display: flex;
-        gap: .375rem;
-    }
-
-    footer .settings {
-        justify-content: flex-end;
-        gap: 1.0625rem;
-    }
+.debug .nav-bar .user .profile-img-container {
+   
+    background-color: grey;
 }

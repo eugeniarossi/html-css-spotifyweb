@@ -15,69 +15,90 @@
     <!--main-->
     <main class="flex">
         <!--nav-bar-->
-        <div class="nav-bar">
+        <nav class="nav-bar column align-items-center">
             <!--logo-->
-            <div class="logo">
-                <div class="logo-small">
-                    <a href="#">
-                        <img src="img/logo-small.svg" alt="logo small">
+            <div class="logo-small">
+                <a href="#">
+                    <img src="img/logo-small.svg" alt="logo small">
+                </a>
+            </div>
+            <div class="logo-big">
+                <a href="#">
+                    <img src="img/logo.svg" alt="logo-big">
+                </a>
+            </div>
+            <!--/logo-->
+            <!--nav menu-->
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="#" class="home flex align-items-center">
+                            <img src="img/home.svg" alt="home">
+                            <span class="hidden">Home</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#" class="search flex align-items-center">
+                            <img src="img/search.svg" alt="cerca">
+                            <span class="hidden">Cerca</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="#" class="library flex align-items-center">
+                            <img src="img/libreria.svg" alt="libreria">
+                            <span class="hidden">Libreria</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--/nav menu-->
+            <!--playlist-->
+            <div class="playlist column hidden">
+                <h4 class="uppercase">playlist</h4>
+                <div class="crea-playlist">
+                    <a href="#" alt="crea playlist" class="flex align-items-center">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span>Crea Playlist</span>
                     </a>
                 </div>
-                <div class="logo-big">
-                    <a href="#">
-                        <img src="img/logo.svg" alt="logo-big">
+                <div class="playlists-list">
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            <!--/playlist-->
+            <!--user-->
+            <div class="user">
+                <div class="installa flex align-items-center">
+                    <a href="#" class="flex">
+                        <div class="download-img-container">
+                            <img src="img/download.svg" alt="download">
+                        </div>
+                        <span class="hidden">Installa app</span>
+                    </a>
+                </div>
+                <div class="profile flex align-items-center">
+                    <a href="#" class="flex">
+                        <div class="profile-img-container">
+                            <img src="img/profile.svg" alt="profile">
+                        </div>
+                        <span class="hidden">John Doe</span>
                     </a>
                 </div>
             </div>
-            <!--/logo-->
-            <nav class="column align-items-center">
-                <!--nav menu-->
-                <div class="nav-menu">
-                    <div class="home">
-                        <i>A</i>
-                        <span>Home</span>
-                    </div>
-                    <div class="search">
-                        <i>A</i>
-                        <span>Cerca</span>
-                    </div>
-                    <div class="library">
-                        <i>A</i>
-                        <span>Libreria</span>
-                    </div>
-                </div>
-                <!--/nav menu-->
-                <!--playlist-->
-                <div class="playlists column">
-                    <h4 class="uppercase">playlist</h4>
-                    <div class="playlists-list">
-                        <ul>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                        </ul>
-                    </div>
-                </div>
-                <!--/playlist-->
-                <!--user-->
-                <div class="user">
-                    <div class="download">
-                        <i>A</i>
-                        <span>B</span>
-                    </div>
-                    <div class="account">
-                        <i>A</i>
-                        <span>B</span>
-                    </div>
-                </div>
-                <!--/user-->
-            </nav>
-        </div>
+            <!--/user-->
+        </nav>
         <!--/nav-bar-->
+        
         <!--main-view-->
         <div class="main-view">
             <!--top bar-->

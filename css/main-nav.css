@@ -1,0 +1,121 @@
+/*
+***************
+MAIN
+***************
+*/
+main {
+    width: 100%;
+    height: calc(100% - 5.625rem);
+}
+
+/*
+***************
+MAIN NAV
+***************
+*/
+.nav-bar .logo-big,
+.nav-bar .hidden {
+    display: none;
+}
+
+.nav-bar {
+    background-color: black;
+    width: 3.125rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav-bar img {
+    height: 100%;
+}
+
+/*------ logo -------*/
+
+.nav-bar .logo-small {
+    padding: .3125rem 0;
+    height: 2.5rem;
+}
+
+.nav-bar .logo-big {
+    height: 5.625rem;
+    padding: 1.25rem 0 1.5rem;
+}
+
+/*------ menu -------*/
+
+.nav-bar .nav-menu ul {
+    
+}
+
+.nav-bar .nav-menu li a {
+    height: 2.1875rem;
+    padding: .375rem 0;
+}
+
+/*------ playlist -------*/
+
+.nav-bar .playlist {
+    overflow: hidden;
+}
+
+.nav-bar .playlist .crea-playlist {
+    height: 2.3125rem;
+}
+
+.nav-bar .playlist .crea-playlist i {
+    font-size: 2.3125rem;
+}
+
+.nav-bar nav .playlist .playlists-list {
+    height: 12.5rem;
+    width: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.nav-bar nav .playlist .playlists-list li {
+    margin: .6875rem 0;
+}
+
+/*------ nav user -------*/
+
+.nav-bar .user {
+    margin-top: auto;
+}
+
+.nav-bar .user .installa .download-img-container {
+    height: 1.5625rem;
+    width: 1.5625rem;
+}
+
+.nav-bar .user .installa .download-img-container img {
+    
+}
+
+.nav-bar .user .profile-img-container {
+    height: 1.5625rem;
+    width: 1.5625rem;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.nav-bar .user .profile-img-container img {
+    object-fit: fill;
+}
+
+@media screen and (min-width: 552px) {
+    .nav-bar {
+        width: 14.375rem;
+        align-items: flex-start;
+        padding: 0 1.25rem;
+    }
+
+    .nav-bar .logo-small {
+        display: none;
+    }
+
+    .nav-bar .logo-big,
+    .nav-bar .hidden {
+        display: initial;
+    }
+}
