@@ -25,4 +25,31 @@ MAIN
 main {
     width: 100%;
     height: calc(100% - var(--footer-height));
+    position: relative;
+}
+
+
+/*------ main top bar -------*/
+
+main .top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: var(--footer-height);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main .upgrade-btn {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    border: .125rem solid white;
+    border-radius: 1.5625rem;
+    background: #080b12;
+}
+
+main .top-bar .upgrade-btn a {
+    padding: .75rem 2.5rem;
+    color: white;
 }
