@@ -46,12 +46,12 @@ main .main-view .main-view-menu > ul > li > a > h4 {
     right: 1.25rem;
     top: 1.25rem;
     border: .125rem solid white;
-    border-radius: 2.5rem;
+    border-radius: 1.5625rem;
     background: #080b12;
 }
 
 .top-bar .upgrade-btn a {
-    padding: .875rem 2.3125rem;
+    padding: .75rem 2.5rem;
 }
 
 /*------ main container -------*/
