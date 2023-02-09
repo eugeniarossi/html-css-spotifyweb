@@ -110,6 +110,15 @@ footer .inner-bar {
     height: 100%;
     width: 20%;
     border-radius: .125rem;
+    justify-content: flex-end;
+}
+
+footer .inner-bar .pointer {
+    width: .9375rem;
+    height: .9375rem;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    display: none;
 }
 
 /*

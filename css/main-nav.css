@@ -149,7 +149,7 @@ main .nav-bar {
     }
     
     .nav-bar .nav-menu li:first-child {
-        border-left: 3px solid #adff2f;
+        border-left: 3px solid var(--green);
     }
 
     .nav-bar .logo-big,
