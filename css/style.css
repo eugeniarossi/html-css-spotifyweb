@@ -4,6 +4,7 @@
 @import url('main-nav.css');
 @import url('main-view.css');
 @import url('footer.css');
+@import url('events.css');
 
 /*
 ***************
@@ -27,7 +28,6 @@ main {
     height: calc(100% - var(--footer-height));
     position: relative;
 }
-
 
 /*------ main top bar -------*/
 
