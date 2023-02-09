@@ -6,6 +6,7 @@ MAIN NAV
 
 main .nav-bar {
     color: var(--nav-grey);
+    z-index: 2;
 }
 
 .nav-bar .logo-big,
