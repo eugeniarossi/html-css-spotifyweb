@@ -40,7 +40,7 @@ main .top-bar {
     right: 0;
 }
 
-main .upgrade-btn {
+main .top-bar .upgrade-btn {
     position: absolute;
     right: 1.25rem;
     top: 1.25rem;
