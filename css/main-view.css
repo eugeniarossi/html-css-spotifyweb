@@ -10,7 +10,7 @@ MAIN VIEW
     width: calc(100% - 3.125rem);
     height: 100%;
     position: relative;
-    padding: 6.875rem 1.875rem 1.25rem .625rem;
+    padding: 6.875rem 1.875rem 0 1.25rem;
     overflow-y: scroll;
 }
 
