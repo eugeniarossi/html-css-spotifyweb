@@ -21,7 +21,7 @@ MAIN VIEW
 }
 
 .main-view .main-view-menu h4,
-.main-view .main-container .track .subtitle,
+.main-view .main-container article .subtitle,
 .main-view .main-container section > p {
     color: var(--main-view-grey);
 }
@@ -64,37 +64,37 @@ main .main-view .main-view-menu > ul > li > a > h4 {
     margin-top: .75rem;
 }
 
-.main-container .tracks-container {
+.main-container .articles-container {
     margin: 1.875rem -0.3125rem 2.5rem;
     justify-content: flex-start;
 }
 
-.main-container .tracks-container .track {
+.main-container .articles-container article {
     width: calc(100% / 2 - .625rem);
     margin-left: .3125rem;
     margin-right: .3125rem;
 }
 
-.main-container .tracks-container .track .cover,
-.main-container .tracks-container .track .cover > img {
+.main-container .articles-container article .cover,
+.main-container .articles-container article .cover > img {
     width: 100%;
 }
 
-.main-container .tracks-container .track-caption {
+.main-container .articles-container .article-caption {
     text-align: center;
 }
 
-.main-container .tracks-container .track-caption .title {
+.main-container .articles-container .article-caption .title {
     margin: 1.25rem 0 .625rem;
 }
 
-.main-container .tracks-container .track-caption .subtitle {
+.main-container .articles-container .article-caption .subtitle {
     margin-bottom: .3125rem;
 }
 
 /*------ artisti piu popolari -------*/
 
-.main-container .popolari .track .cover {
+.main-container .popolari article .cover {
     border-radius: 50%;
     overflow: hidden;
 }
@@ -106,13 +106,13 @@ main-view mediaq
 */
 
 @media screen and (min-width: 640px) {
-    .main-container .tracks-container .track {
+    .main-container .articles-container article {
         width: calc(100% / 4 - .625rem);
     }
 }
 
 @media screen and (min-width: 878px) {
-    .main-container .tracks-container .track {
+    .main-container .articles-container article {
         width: calc(100% / 6 - .625rem);
     }
 }
