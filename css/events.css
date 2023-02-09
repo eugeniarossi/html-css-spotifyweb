@@ -3,3 +3,15 @@
 main .top-bar .upgrade-btn:hover {
     transform: scale(1.1);
 }
+
+/*------ main view menu-------*/
+
+.main-view-menu > ul > li > a:hover h4 {
+    color: white;
+}
+
+/*------ main view container-------*/
+
+.main-container article:hover .cover-hover {
+    display: block;
+}

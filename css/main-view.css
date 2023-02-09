@@ -14,7 +14,8 @@ MAIN VIEW
 }
 
 .main-view h2,
-.main-view h3 {
+.main-view h3,
+.main-view article .cover {
     color: white;
 }
 
@@ -24,11 +25,13 @@ MAIN VIEW
     color: var(--main-view-grey);
 }
 
+/*------ main view menu -------*/
+
 main .main-view .main-view-menu > ul > li > a > h4 {
     padding: .5rem .75rem;
 }
 
-/*------ main container -------*/
+/*------ main view container -------*/
 
 .main-view .main-container > section {
     margin: 2.5rem 0;
@@ -47,6 +50,10 @@ main .main-view .main-view-menu > ul > li > a > h4 {
     width: calc(100% / 2 - .625rem);
     margin-left: .3125rem;
     margin-right: .3125rem;
+}
+
+.main-container .articles-container article .cover {
+    position: relative;
 }
 
 .main-container .articles-container article .cover,
@@ -72,6 +79,28 @@ main .main-view .main-view-menu > ul > li > a > h4 {
     border-radius: 50%;
     overflow: hidden;
 }
+
+/*
+***************
+main-view hover elements
+***************
+*/
+
+.main-container article .cover .cover-hover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3.4375rem;
+    display: none;
+}
+
+.main-container article .cover-hover a {
+    width: 100%;
+    height: 100%;
+} 
 
 /*
 ***************
