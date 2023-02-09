@@ -14,26 +14,6 @@ MAIN VIEW
     overflow-y: scroll;
 }
 
-.main-view .top-bar {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: var(--footer-height);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.top-bar .upgrade-btn {
-    position: absolute;
-    right: 1.25rem;
-    top: 1.25rem;
-    height: 2.5rem;
-    width: 13.4375rem;
-    border: .125rem solid white;
-    border-radius: 1.25rem;
-    background: #080b12;
-}
-
 .top-bar .upgrade-btn a,
 .main-view h2,
 .main-view h3 {
@@ -48,6 +28,30 @@ MAIN VIEW
 
 main .main-view .main-view-menu > ul > li > a > h4 {
     padding: .5rem .75rem;
+}
+
+/*------ main top bar -------*/
+
+.main-view .top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: var(--footer-height);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.top-bar .upgrade-btn {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    border: .125rem solid white;
+    border-radius: 2.5rem;
+    background: #080b12;
+}
+
+.top-bar .upgrade-btn a {
+    padding: .875rem 2.3125rem;
 }
 
 /*------ main container -------*/
