@@ -15,7 +15,7 @@ MAIN VIEW
 
 .main-view .top-bar {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 5.625rem;
+    height: var(--footer-height);
     width: 100%;
     position: absolute;
     top: 0;

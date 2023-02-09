@@ -5,7 +5,7 @@ MAIN
 */
 main {
     width: 100%;
-    height: calc(100% - 5.625rem);
+    height: calc(100% - var(--footer-height));
 }
 
 /*
@@ -13,6 +13,10 @@ main {
 MAIN NAV
 ***************
 */
+main .nav-bar {
+    color: var(--nav-grey);
+}
+
 .nav-bar .logo-big,
 .nav-bar .hidden {
     display: none;
@@ -64,6 +68,12 @@ MAIN NAV
     margin-top: 1.875rem;
 }
 
+.nav-bar .home,
+.nav-bar .playlist h4,
+.nav-bar .user .profile {
+    color: white;
+}
+
 .nav-bar .playlist .crea-playlist {
     height: 2.3125rem;
     margin: .9375rem 0 .1875rem;
@@ -72,6 +82,7 @@ MAIN NAV
 .nav-bar .playlist .crea-playlist i {
     font-size: 2.3125rem;
     margin-right: .625rem;
+    color: #a3a3a3;
 }
 
 .nav-bar .playlist .playlists-list {
@@ -99,16 +110,27 @@ MAIN NAV
     padding: .875rem 0 .4375rem;
 }
 
-.nav-bar .user .installa .download-img-container {
-    height: 1.5625rem;
-    width: 1.5625rem;
+.nav-bar .user .installa .download-img-container,
+.nav-bar .user .installa .download-img-container img {
+    height: .8125rem;
+    width: .8125rem;
+    border-radius: 50%;
 }
 
-.nav-bar .user .profile .profile-img-container {
+.nav-bar .user .installa .download-img-container img {
+    object-fit: fill;
+}
+
+.nav-bar .user .profile .profile-img-container,
+.nav-bar .user .profile-img-container img {
     height: 1.5625rem;
     width: 1.5625rem;
     border-radius: 50%;
-    background-color: grey;
+    background-color: #808080;
+}
+
+.nav-bar .user .profile-img-container img {
+    object-fit: fill;
 }
 
 .nav-bar .user .installa a > small,
@@ -116,15 +138,22 @@ MAIN NAV
     padding-left: .6875rem;
 }
 
-.nav-bar .user .installa .download-img-container img,
-.nav-bar .user .profile-img-container img {
-    object-fit: fill;
-}
-
 @media screen and (min-width: 552px) {
     .nav-bar {
         width: 14.375rem;
         align-items: flex-start;
+    }
+    
+    .nav-bar .nav-menu li > div {
+        justify-content: flex-start;
+    }
+
+    .nav-bar .user {
+        align-items: flex-start;
+    }
+    
+    .nav-bar .nav-menu li:first-child {
+        border-left: 3px solid #adff2f;
     }
 
     .nav-bar .logo-big,
@@ -144,20 +173,12 @@ MAIN NAV
         display: initial;
     }
     
-    .nav-bar .nav-menu li > div {
-        justify-content: flex-start;
-    }
-    
-    .nav-bar .nav-menu li:first-child {
-        border-left: 3px solid #adff2f;
-    }
-
     .nav-bar .user,
     .nav-bar .user .installa {
         width: 100%;
     }
 
     .nav-bar .user .installa {
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid var(--nav-grey);
     }
 }
