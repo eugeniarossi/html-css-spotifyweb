@@ -16,11 +16,14 @@ RESET
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+/*
+***************
+MAIN
+***************
+*/
+main {
+    width: 100%;
+    height: calc(100% - var(--footer-height));
 }
 
 /*
