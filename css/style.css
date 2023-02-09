@@ -1,10 +1,23 @@
-@import url('variables.css');
 @import url('utilities.css');
-@import url('common.css');
+@import url('main.css');
 @import url('main-nav.css');
 @import url('main-view.css');
 @import url('footer.css');
 @import url('events.css');
+
+/*
+***************
+VARIABLES
+***************
+*/
+
+:root {
+    --footer-height: 5.625rem;
+    --nav-grey: #6f6f6f;
+    --footer-grey: #878787;
+    --main-view-grey: #7d7f84;
+    --green: #adff2f;
+}
 
 /*
 ***************
@@ -19,38 +32,33 @@ RESET
 
 /*
 ***************
-MAIN
+COMMON
 ***************
 */
 
-main {
-    width: 100%;
-    height: calc(100% - var(--footer-height));
-    position: relative;
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: .875rem;
 }
 
-/*------ main top bar -------*/
-
-main .top-bar {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: var(--footer-height);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-shadow: 0px -2px 1px 3px rgba(0, 0, 0, 0.2);
+img {
+    max-width: 100%;
+    display: block;
 }
 
-main .top-bar .upgrade-btn {
-    position: absolute;
-    right: 1.25rem;
-    top: 1.25rem;
-    border: .125rem solid white;
-    border-radius: 1.5625rem;
-    background: #080b12;
+ul {
+    list-style: none;
 }
 
-main .top-bar .upgrade-btn a {
-    padding: .75rem 2.5rem;
-    color: white;
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+button {
+    border: none;
 }
