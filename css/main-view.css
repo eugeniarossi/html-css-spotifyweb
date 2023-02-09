@@ -27,8 +27,13 @@ MAIN VIEW
 
 /*------ main view menu -------*/
 
-main .main-view .main-view-menu > ul > li > a > h4 {
-    padding: .5rem .75rem;
+main .main-view .main-view-menu ul li div {
+    padding: .3125rem .75rem;
+}
+
+main .main-view .main-view-menu ul li .green-border {
+    width: 35%;
+    border-bottom: .1875rem solid var(--green);
 }
 
 /*------ main view container -------*/

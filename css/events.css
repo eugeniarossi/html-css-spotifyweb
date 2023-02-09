@@ -16,7 +16,7 @@ main .top-bar .upgrade-btn:hover {
 
 /*------ main view menu -------*/
 
-.main-view-menu > ul > li > a:hover h4 {
+.main-view-menu ul li div a:hover h4 {
     color: white;
 }
 
