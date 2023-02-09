@@ -42,6 +42,10 @@ main .nav-bar {
     padding: 1.25rem 1.25rem 1.5rem;
 }
 
+.nav-bar .logo-big img {
+    width: 8.125rem;
+}
+
 /*------ menu -------*/
 
 .nav-bar .nav-menu {
