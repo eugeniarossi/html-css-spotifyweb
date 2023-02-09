@@ -38,6 +38,7 @@ main .top-bar {
     position: absolute;
     top: 0;
     right: 0;
+    box-shadow: 0px -2px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 main .top-bar .upgrade-btn {
