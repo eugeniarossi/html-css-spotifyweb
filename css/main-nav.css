@@ -24,6 +24,12 @@ main .nav-bar {
     height: 100%;
 }
 
+.nav-bar .home,
+.nav-bar .playlist h4,
+.nav-bar .user .profile {
+    color: white;
+}
+
 /*------ logo -------*/
 
 .nav-bar .logo-small {
@@ -57,12 +63,6 @@ main .nav-bar {
     overflow: hidden;
     width: 100%;
     margin-top: 1.875rem;
-}
-
-.nav-bar .home,
-.nav-bar .playlist h4,
-.nav-bar .user .profile {
-    color: white;
 }
 
 .nav-bar .playlist .crea-playlist {

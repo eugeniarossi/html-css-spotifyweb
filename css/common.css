@@ -3,6 +3,7 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: .875rem;
 }
 
 img {
@@ -25,4 +26,5 @@ footer .settings .volume .volume-bar {
 a {
     text-decoration: none;
     color: inherit;
+    font-size: inherit;
 }

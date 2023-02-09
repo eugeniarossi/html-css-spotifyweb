@@ -4,12 +4,13 @@
 MAIN VIEW
 ***************
 */
+
 .main-view {
     background-color: #141922;
     width: calc(100% - 3.125rem);
     height: 100%;
     position: relative;
-    padding: 6.875rem 1.875rem 1.25rem 1.25rem;
+    padding: 6.875rem 1.875rem 1.25rem .625rem;
     overflow-y: scroll;
 }
 
@@ -33,11 +34,19 @@ MAIN VIEW
     background: #080b12;
 }
 
-.top-bar .upgrade-btn a {
+.top-bar .upgrade-btn a,
+.main-view h2,
+.main-view h3 {
     color: white;
 }
 
-main .main-view .main-view-menu > ul > li > a {
+.main-view .main-view-menu h4,
+.main-view .main-container .track .subtitle,
+.main-view .main-container section > p {
+    color: var(--main-view-grey);
+}
+
+main .main-view .main-view-menu > ul > li > a > h4 {
     padding: .5rem .75rem;
 }
 
@@ -47,8 +56,12 @@ main .main-view .main-view-menu > ul > li > a {
     margin: 2.5rem 0;
 }
 
+.main-view .main-container section > p {
+    margin-top: .75rem;
+}
+
 .main-container .tracks-container {
-    margin: 0 -0.3125rem;
+    margin: 1.875rem -0.3125rem 2.5rem;
     justify-content: flex-start;
 }
 
@@ -65,6 +78,21 @@ main .main-view .main-view-menu > ul > li > a {
 
 .main-container .tracks-container .track-caption {
     text-align: center;
+}
+
+.main-container .tracks-container .track-caption .title {
+    margin: 1.25rem 0 .625rem;
+}
+
+.main-container .tracks-container .track-caption .subtitle {
+    margin-bottom: .3125rem;
+}
+
+/*------ artisti piu popolari -------*/
+
+.main-container .popolari .track .cover {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /*
