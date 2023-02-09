@@ -38,13 +38,13 @@ MAIN NAV
 
 .nav-bar .logo-big {
     height: 5.625rem;
-    padding: 1.25rem 0 1.5rem;
+    padding: 1.25rem 1.25rem 1.5rem;
 }
 
 /*------ menu -------*/
 
-.nav-bar .nav-menu ul {
-    
+.nav-bar .nav-menu {
+    width: 100%;
 }
 
 .nav-bar .nav-menu li a {
@@ -52,28 +52,36 @@ MAIN NAV
     padding: .375rem 0;
 }
 
+.nav-bar .nav-menu li a > span {
+    padding-left: .5625rem;
+} 
+
 /*------ playlist -------*/
 
 .nav-bar .playlist {
     overflow: hidden;
+    width: 100%;
+    margin-top: 1.875rem;
 }
 
 .nav-bar .playlist .crea-playlist {
     height: 2.3125rem;
+    margin: .9375rem 0 .1875rem;
 }
 
 .nav-bar .playlist .crea-playlist i {
     font-size: 2.3125rem;
+    margin-right: .625rem;
 }
 
-.nav-bar nav .playlist .playlists-list {
+.nav-bar .playlist .playlists-list {
     height: 12.5rem;
     width: 100%;
     overflow-y: auto;
     flex-grow: 1;
 }
 
-.nav-bar nav .playlist .playlists-list li {
+.nav-bar .playlist .playlists-list li {
     margin: .6875rem 0;
 }
 
@@ -83,22 +91,32 @@ MAIN NAV
     margin-top: auto;
 }
 
+.nav-bar .user .installa {
+    padding: .6875rem 0;
+}
+
+.nav-bar .user .profile {
+    padding: .875rem 0 .4375rem;
+}
+
 .nav-bar .user .installa .download-img-container {
     height: 1.5625rem;
     width: 1.5625rem;
 }
 
-.nav-bar .user .installa .download-img-container img {
-    
-}
-
-.nav-bar .user .profile-img-container {
+.nav-bar .user .profile .profile-img-container {
     height: 1.5625rem;
     width: 1.5625rem;
     border-radius: 50%;
     background-color: grey;
 }
 
+.nav-bar .user .installa a > small,
+.nav-bar .user .profile a > span {
+    padding-left: .6875rem;
+}
+
+.nav-bar .user .installa .download-img-container img,
 .nav-bar .user .profile-img-container img {
     object-fit: fill;
 }
@@ -107,6 +125,13 @@ MAIN NAV
     .nav-bar {
         width: 14.375rem;
         align-items: flex-start;
+    }
+
+    .nav-bar .logo-big,
+    .nav-bar .logo-small,
+    .nav-bar .nav-menu li div,
+    .nav-bar .playlist,
+    .nav-bar .user  {
         padding: 0 1.25rem;
     }
 
@@ -117,5 +142,22 @@ MAIN NAV
     .nav-bar .logo-big,
     .nav-bar .hidden {
         display: initial;
+    }
+    
+    .nav-bar .nav-menu li > div {
+        justify-content: flex-start;
+    }
+    
+    .nav-bar .nav-menu li:first-child {
+        border-left: 3px solid #adff2f;
+    }
+
+    .nav-bar .user,
+    .nav-bar .user .installa {
+        width: 100%;
+    }
+
+    .nav-bar .user .installa {
+        border-bottom: 1px solid grey;
     }
 }
