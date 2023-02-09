@@ -4,6 +4,7 @@
 FOOTER
 ***************
 */
+
 footer {
     background-color: #282828;
     height: var(--footer-height);
@@ -26,10 +27,22 @@ footer .playing {
     gap: 1.5rem;
 }
 
+footer button {
+    background-color: #282828;
+}
+
+footer .player .controls button i,
+footer .player .time,
+footer .playing .track .title,
+footer .settings,
+footer .settings .volume button i {
+    color: white;
+}
+
 /*------ footer playing -------*/
 
 footer .playing .track {
-    gap: 5%;
+    gap: 7%;
 }
 
 footer .playing .track .cover {
@@ -37,14 +50,27 @@ footer .playing .track .cover {
     max-width: 2.625rem;
 }
 
+footer .playing button,
+footer .playing .subtitle {
+    color: var(--footer-grey);
+}
+
 /*------ footer player -------*/
 
 footer .player .controls {
-    margin-bottom: .875rem;
+    margin-bottom: .4375rem;
+}
+
+footer .player .controls button i {
+    font-size: .875rem;
 }
 
 footer .player .controls .play {
     margin: 0 .625rem;
+}
+
+footer .player .controls .play button i {
+    font-size: 1.875rem;
 }
 
 footer .player .controls ul {
@@ -67,6 +93,24 @@ footer .settings .volume {
     max-width: 9.375rem;
 }
 
+/*------ footer time & volume bar -------*/
+
+footer .player .time-bar,
+footer .settings .volume .volume-bar {
+    border-radius: .125rem;
+    height: .25rem;
+    flex-grow: 1;
+    margin: .625rem;
+    background-color: #5a5a5a;
+}
+
+footer .inner-bar {
+    background-color: #c1c1c1;
+    height: 100%;
+    width: 20%;
+    border-radius: .125rem;
+}
+
 /*
 ***************
 footer mediaq
@@ -79,6 +123,7 @@ footer mediaq
 
     footer .playing .track .subtitle {
         display: flex;
+        gap: .1875rem;
     }
 
     footer .settings {
@@ -94,7 +139,7 @@ footer mediaq
 
     footer .playing .add {
         display: flex;
-        gap: .375rem;
+        gap: .875rem;
     }
 
     footer .settings {

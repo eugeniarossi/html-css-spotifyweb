@@ -21,38 +21,8 @@ RESET
 MAIN
 ***************
 */
+
 main {
     width: 100%;
     height: calc(100% - var(--footer-height));
-}
-
-/*
-***************
-DEBUG
-***************
-*/
-.debug {
-    color: white;
-}
-
-.debug footer .player .time-bar,
-.debug footer .settings .volume .volume-bar {
-    background-color: grey;
-}
-
-.debug footer .player {
-    background-color: violet;
-}
-
-.debug footer .volume {
-    background-color: blue;
-}
-
-.debug .nav-bar nav a {
-    color: white;
-}
-
-.debug .nav-bar .user .profile-img-container {
-   
-    background-color: grey;
 }

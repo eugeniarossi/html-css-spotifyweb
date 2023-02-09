@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="debug">
+<body>
     <!--main-->
     <main class="flex">
         <!--nav-bar-->
@@ -293,57 +293,85 @@
                     <img src="img/sinister.jpeg" alt="cover">
                 </div>
                 <div>
-                    <div>Sinister</div>
+                    <div class="title">Sinister</div>
                     <div class="subtitle">
-                        <div>Brano</div>
-                        <div>Nome</div>
+                        <small>
+                            <a href="#" alt="brano">Brano</a>
+                        </small>
+                        <small>
+                            <a href="#" alt="nome">Nome</a>
+                        </small>
                     </div>
                 </div>
             </div>
             <div class="add">
-                <div>C</div>
-                <div>D</div>
+                <button>
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <button>
+                    <i class="fa-regular fa-folder"></i>                
+                </button>
             </div>
         </div>
         <!--/playing-->
         <!--player-->
         <div class="player column align-items-center">
             <div class="controls">
-                <ul class="flex justify-content-center">
+                <ul class="flex justify-content-center align-items-center">
                     <li>
-                        <i class="fa-regular fa-circle-play"></i>
+                        <button>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </button>
                     </li>
                     <li>
-                        <i class="fa-regular fa-circle-play"></i>
+                        <button>
+                            <i class="fa-solid fa-backward-step"></i>
+                        </button>
                     </li>
                     <li class="play">
-                        <i class="fa-regular fa-circle-play"></i>
+                        <button>
+                            <i class="fa-regular fa-circle-play"></i>
+                        </button>
                     </li>
                     <li>
-                        <i class="fa-regular fa-circle-play"></i>
+                        <button>
+                            <i class="fa-solid fa-forward-step"></i>
+                        </button>
                     </li>
                     <li>
-                        <i class="fa-regular fa-circle-play"></i>
+                       <button>
+                            <i class="fa-solid fa-rotate-right"></i>
+                       </button>
                     </li>
                 </ul>
             </div>
             <div class="time flex justify-space-between align-items-center">
-                <div>0:25</div>
+                <small>0:25</small>
                 <div class="time-bar">
-                    <div></div>
+                    <div class="inner-bar"></div>
                 </div>
-                <div>4:35</div>
+                <small>4:35</small>
             </div>
         </div>
         <!--/player-->
         <!--settings-->
         <div class="settings flex align-items-center">
-            <div class="hamburger">A</div>
-            <div class="connect">B</div>
+            <div class="hamburger">
+                <a href="#" alt="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="connect">
+                <a href="#" alt="connect">
+                    <i class="fa-solid fa-display"></i>
+                </a>
+            </div>
             <div class="volume flex align-items-center">
-                <div class="volume-icon">C</div>
+                <button class="volume-icon">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
                 <div class="volume-bar">
-                    <div></div>
+                    <div class="inner-bar"></div>
                 </div>
             </div>
         </div>
