@@ -36,6 +36,7 @@ main .top-bar .upgrade-btn:hover {
 
 footer .playing button:hover {
     color: white;
+    cursor: pointer;
 }
 
 footer .playing .subtitle:hover a {
